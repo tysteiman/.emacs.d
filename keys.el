@@ -1,7 +1,6 @@
 ;; set some keybindings
 (dolist (key '(
                ("C-c m s" magit-status)
-               ("C-c w c" whitespace-cleanup)
                ("C-x C-b" ibuffer)
                ("C-c a j" ace-jump-char-mode)
                ;; helm bindings
