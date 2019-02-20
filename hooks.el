@@ -6,4 +6,6 @@
                             (setq-local show-trailing-whitespace t)
                             ;; use rainbow delimiters
                             (rainbow-delimiters-mode)
+                            ;; hl the current line
+                            (hl-line-mode)
                             ))
