@@ -11,3 +11,6 @@
                             ;; turn on diff highlighting in margin
                             (diff-hl-mode)
                             ))
+
+;; refresh diff hl when commit is made in magit
+(add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
