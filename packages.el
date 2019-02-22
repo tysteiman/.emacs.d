@@ -15,6 +15,7 @@
                    ace-jump-mode
                    rainbow-delimiters
                    doom-themes
+                   diff-hl
                    ))
   (unless (package-installed-p package)
     (package-install package)))

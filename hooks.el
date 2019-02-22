@@ -8,4 +8,6 @@
                             (rainbow-delimiters-mode)
                             ;; hl the current line
                             (hl-line-mode)
+                            ;; turn on diff highlighting in margin
+                            (diff-hl-mode)
                             ))
