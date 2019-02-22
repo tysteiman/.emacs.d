@@ -14,6 +14,7 @@
                    window-numbering
                    ace-jump-mode
                    rainbow-delimiters
+                   doom-themes
                    ))
   (unless (package-installed-p package)
     (package-install package)))
