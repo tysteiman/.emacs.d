@@ -9,6 +9,7 @@
                ("M-x" helm-M-x)
                ("C-c s s" helm-swoop)
                ("C-c h i" helm-imenu)
+               ("C-c h t" helm-etags-select)
                ;; custom defun bindings
                ("C-o" my/new-line-below)
                ))
