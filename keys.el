@@ -3,6 +3,8 @@
                ("C-c m s" magit-status)
                ("C-x C-b" ibuffer)
                ("C-c a j" ace-jump-char-mode)
+               ("C-c e j" emmet-expand-line)
+               ("C-c h f" browse-url-of-file)
                ;; helm bindings
                ("C-x C-f" helm-find-files)
                ("C-x b" helm-buffers-list)

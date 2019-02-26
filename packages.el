@@ -16,6 +16,7 @@
                    rainbow-delimiters
                    doom-themes
                    helm-etags-plus
+                   emmet-mode
                    ))
   (unless (package-installed-p package)
     (package-install package)))
