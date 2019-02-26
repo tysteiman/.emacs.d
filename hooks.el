@@ -9,3 +9,10 @@
                             ;; hl the current line
                             (hl-line-mode)
                             ))
+
+;; rjsx (react) mode hooks
+(add-hook 'rjsx-mode-hook (lambda ()
+                            ;; we want to bind our tag navigate key to helm-etags
+                            ;; since this works way better than the default
+                            ;; support for this mode (can never find tags)
+                            (local-set-key (kbd "M-.") 'helm-etags-select)))
