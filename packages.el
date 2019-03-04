@@ -14,7 +14,6 @@
                    window-numbering
                    ace-jump-mode
                    rainbow-delimiters
-                   doom-themes
                    helm-etags-plus
                    emmet-mode
                    spotify
