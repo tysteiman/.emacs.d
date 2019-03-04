@@ -17,6 +17,7 @@
                    doom-themes
                    helm-etags-plus
                    emmet-mode
+                   spotify
                    ))
   (unless (package-installed-p package)
     (package-install package)))

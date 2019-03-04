@@ -12,6 +12,10 @@
                ("C-c s s" helm-swoop)
                ("C-c h i" helm-imenu)
                ("C-c h t" helm-etags-select)
+               ;; spotify bindings
+               ("C-c s p n" spotify-next)
+               ("C-c s p p" spotify-playpause)
+               ("C-c s p q" spotify-quit)
                ;; custom defun bindings
                ("C-o" my/new-line-below)
                ))
