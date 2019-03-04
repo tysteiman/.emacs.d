@@ -16,3 +16,10 @@
                             ;; since this works way better than the default
                             ;; support for this mode (can never find tags)
                             (local-set-key (kbd "M-.") 'helm-etags-select)))
+
+;; js2 mode hooks
+(add-hook 'js2-mode-hook (lambda ()
+                            ;; we want to bind our tag navigate key to helm-etags
+                            ;; since this works way better than the default
+                            ;; support for this mode (can never find tags)
+                            (local-set-key (kbd "M-.") 'helm-etags-select)))
