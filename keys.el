@@ -1,6 +1,7 @@
 ;; set some keybindings
 (dolist (key '(
                ("C-c m s"   magit-status)
+               ("C-c m b"   magit-blame)
                ("C-x C-b"   ibuffer)
                ("C-c a j"   ace-jump-char-mode)
                ("C-c e j"   emmet-expand-line)
