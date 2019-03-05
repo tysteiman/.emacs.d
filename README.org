@@ -1,0 +1,34 @@
+* Emacs
+
+My Emacs fumblings.
+
+** Overview
+
+The goal is an easy-to-manage Emacs configuration that doesn't get in the
+way too much. The files are self explanatory and can be added/removed as
+needed or desired.
+
+*** init
+
+The entry point into Emacs. This sets the Emacs custom file to save to,
+loads our custom files, and loads up ~/local.el as well.
+
+*** packages
+
+Custom packages that Emacs will check for & install on startup.
+
+*** config
+
+Any configuration of packages that were installed (setq/funcalls).
+
+*** defuns
+
+Custom defuns
+
+*** keys
+
+Custom keybindings
+
+*** hooks
+
+Custom hooks
