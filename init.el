@@ -19,3 +19,6 @@
 (let ((local "~/local.el"))
   (when (file-exists-p local)
     (load-file local)))
+
+;; puts
+(put 'narrow-to-region 'disabled nil)
