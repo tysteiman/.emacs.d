@@ -23,3 +23,5 @@
 (setq-default truncate-lines t)
 (setq-default indent-tabs-mode nil)
 (setq-default c-basic-offset 4)
+(setq-default js-indent-level 4)
+(setq-default sgml-basic-offset 4)
