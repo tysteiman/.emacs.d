@@ -19,7 +19,6 @@
                ("C-c s p q" spotify-quit)
                ;; custom defun bindings
                ("C-o"       my/new-line-below)
-               ("C-*"       my/insert-doc-line)
                ))
   (let ((binding (car key))
         (command (car (cdr key))))
