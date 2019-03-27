@@ -6,6 +6,8 @@
                ("C-c a j"   ace-jump-char-mode)
                ("C-j"       emmet-expand-line)
                ("C-c h f"   browse-url-of-file)
+               ("C-]"       xref-find-definitions)
+               ("C-t"       xref-pop-marker-stack)
                ;; helm bindings
                ("C-x C-f"   helm-find-files)
                ("C-x b"     helm-buffers-list)
