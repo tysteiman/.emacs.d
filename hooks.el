@@ -1,14 +1,5 @@
 ;; add some prog mode hooks -- these will only be called when in "code" buffers.
-(add-hook 'prog-mode-hook (lambda ()
-                            ;; show line numbers
-                            (linum-mode)
-                            ;; show trailing whitespace
-                            (setq-local show-trailing-whitespace t)
-                            ;; use rainbow delimiters
-                            (rainbow-delimiters-mode)
-                            ;; hl the current line
-                            (hl-line-mode)
-                            ))
+(add-hook 'prog-mode-hook 'my/configure-code-buffer)
 
 ;; rjsx (react) mode hooks
 (add-hook 'rjsx-mode-hook (lambda ()
@@ -30,3 +21,6 @@
                                   ;; since this works way better than the default
                                   ;; support for this mode (can never find tags)
                                   (local-set-key (kbd "M-.") 'helm-etags-select)))
+
+;; slim mode -- use default code buffer configuration
+(add-hook 'slim-mode-hook 'my/configure-code-buffer)
