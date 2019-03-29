@@ -22,5 +22,3 @@
                                   ;; support for this mode (can never find tags)
                                   (local-set-key (kbd "M-.") 'helm-etags-select)))
 
-;; slim mode -- use default code buffer configuration
-(add-hook 'slim-mode-hook 'my/configure-code-buffer)
