@@ -9,9 +9,9 @@
 (when (file-exists-p custom-file)
   (load-file custom-file))
 
+(load-file "~/.emacs.d/defuns.el")
 (load-file "~/.emacs.d/packages.el")
 (load-file "~/.emacs.d/config.el")
-(load-file "~/.emacs.d/defuns.el")
 (load-file "~/.emacs.d/keys.el")
 (load-file "~/.emacs.d/hooks.el")
 

@@ -3,21 +3,18 @@
 
 (package-refresh-contents)
 
-;; auto install packages
-(dolist (package '(
-                   magit
-                   company
-                   projectile
-                   helm
-                   helm-projectile
-                   helm-swoop
-                   window-numbering
-                   ace-jump-mode
-                   rainbow-delimiters
-                   helm-etags-plus
-                   emmet-mode
-                   spotify
-                   doom-themes
-                   ))
-  (unless (package-installed-p package)
-    (package-install package)))
+(my/install-packages '(
+                       magit
+                       company
+                       projectile
+                       helm
+                       helm-projectile
+                       helm-swoop
+                       window-numbering
+                       ace-jump-mode
+                       rainbow-delimiters
+                       helm-etags-plus
+                       emmet-mode
+                       spotify
+                       doom-themes
+                       ))

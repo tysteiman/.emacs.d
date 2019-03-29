@@ -12,6 +12,12 @@
           (command (car (cdr key))))
       (global-set-key (kbd binding) command))))
 
+(defun my/install-packages (packages)
+  "Install a list of packages if they're not already installed."
+  (dolist (package packages)
+    (unless (package-installed-p package)
+      (package-install package))))
+
 (defun my/configure-code-buffer ()
   "Default configuration for code buffers"
   (interactive)
