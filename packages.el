@@ -15,6 +15,4 @@
                        rainbow-delimiters
                        helm-etags-plus
                        emmet-mode
-                       spotify
-                       doom-themes
                        ))
