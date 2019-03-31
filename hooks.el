@@ -7,4 +7,4 @@
                                   (local-set-key (kbd "C-c e") (lambda ()
                                                                  (interactive)
                                                                  (eval-buffer)
-                                                                 (message "Buffer evaluted.")))))
+                                                                 (message "Buffer evaluated.")))))
