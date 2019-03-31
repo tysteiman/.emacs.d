@@ -5,12 +5,15 @@
   (move-end-of-line 1)
   (newline-and-indent))
 
-(defun my/bind-keys-list (keys)
-  "Bind keys based on a passed list (see keys.el)"
+(defun my/bind-keys-list (keys &optional local)
+  "Bind keys based on a passed list (see keys.el). If &OPTIONAL `local' is set, only bind to local buffer"
   (dolist (key keys)
     (let ((binding (car key))
-          (command (car (cdr key))))
-      (global-set-key (kbd binding) command))))
+          (command (car (cdr key)))
+          (fun (if local
+                   'local-set-key
+                 'global-set-key)))
+      (funcall fun (kbd binding) command))))
 
 (defun my/install-packages (packages)
   "Install a list of packages if they're not already installed."

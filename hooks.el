@@ -4,7 +4,9 @@
 ;; add emacs-lisp-mode hooks
 (add-hook 'emacs-lisp-mode-hook (lambda ()
                                   ;; set local keybinding for C-c e -> eval buffer & message
-                                  (local-set-key (kbd "C-c e") (lambda ()
-                                                                 (interactive)
-                                                                 (eval-buffer)
-                                                                 (message "Buffer evaluated.")))))
+                                  (my/bind-keys-list '(
+                                                       ("C-c e" (lambda ()
+                                                                  (interactive)
+                                                                  (eval-buffer)
+                                                                  (message "Buffer evaluated.")))
+                                                       ) t)))
