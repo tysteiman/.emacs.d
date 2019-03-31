@@ -10,3 +10,12 @@
                                                                   (eval-buffer)
                                                                   (message "Buffer evaluated.")))
                                                        ) t)))
+
+;; ruby mode hooks
+(add-hook 'ruby-mode-hook (lambda ()
+                            (my/bind-keys-list '(
+                                                 ;; bind C-c r r to run rubocop on the current file.
+                                                 ("C-c r r" (lambda ()
+                                                              (interactive)
+                                                              (compile (concat "rubocop " (buffer-file-name)))))
+                                                 ) t)))
