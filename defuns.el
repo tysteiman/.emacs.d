@@ -15,6 +15,10 @@
                  'global-set-key)))
       (funcall fun (kbd binding) command))))
 
+(defun my/local-bind-keys-list (keys)
+  "Bind keys to a specific buffer, using `my/bind-keys-list' passing t to LOCAL"
+  (my/bind-keys-list keys t))
+
 (defun my/install-packages (packages)
   "Install a list of packages if they're not already installed."
   (dolist (package packages)
