@@ -8,8 +8,7 @@
                                                              ("C-c e" (lambda ()
                                                                         (interactive)
                                                                         (eval-buffer)
-                                                                        (message "Buffer evaluated.")))
-                                                             ))))
+                                                                        (message "Buffer evaluated.")))))))
 
 ;; ruby mode hooks
 (add-hook 'ruby-mode-hook (lambda ()
@@ -17,5 +16,4 @@
                                                        ;; bind C-c r r to run rubocop on the current file.
                                                        ("C-c r r" (lambda ()
                                                                     (interactive)
-                                                                    (compile (concat "rubocop " (buffer-file-name)))))
-                                                       ))))
+                                                                    (compile (concat "rubocop " (buffer-file-name)))))))))
