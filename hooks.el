@@ -6,9 +6,15 @@
                                   ;; set local keybinding for C-c e -> eval buffer & message
                                   (my/local-bind-keys-list '(
                                                              ("C-c e" (lambda ()
+                                                                        "Evaluate current emacs lisp buffer"
                                                                         (interactive)
                                                                         (eval-buffer)
-                                                                        (message "Buffer evaluated.")))))))
+                                                                        (message "Buffer evaluated.")))
+                                                             ("C-c o" (lambda ()
+                                                                        "Use forward list and newline to start a new line forward from the matching list."
+                                                                        (interactive)
+                                                                        (forward-list)
+                                                                        (newline-and-indent)))))))
 
 ;; ruby mode hooks
 (add-hook 'ruby-mode-hook (lambda ()
