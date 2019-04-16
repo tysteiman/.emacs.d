@@ -15,6 +15,10 @@
                      ("C-c h t"   helm-etags-select)
                      ;; custom defun bindings
                      ("C-o"       my/new-line-below)
+                     ("C-c C-o l"   (lambda ()
+                                      "Open local.el file"
+                                      (interactive)
+                                      (find-file "~/.emacs.d/local.el")))
                      ))
 
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
