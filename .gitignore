@@ -5,3 +5,7 @@ projectile-bookmarks.eld
 tramp
 url/
 var/
+
+local.el
+custom.el
+.ctags
