@@ -36,3 +36,8 @@
   (rainbow-delimiters-mode)
   ;; hl the current line
   (hl-line-mode))
+
+(defun my/open-local-file ()
+  "Open local.el file"
+  (interactive)
+  (find-file "~/.emacs.d/local.el"))
