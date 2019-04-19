@@ -5,6 +5,7 @@ projectile-bookmarks.eld
 tramp
 url/
 var/
+.dir-locals.el
 
 local.el
 custom.el
