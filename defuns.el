@@ -45,7 +45,7 @@
 (defun my/toggle-evil-mode ()
   "Switch from evil mode to non evil mode"
   (interactive)
-  (let ((evil? evil-mode))
+  (let ((evil? (if (boundp 'evil-mode) evil-mode nil)))
     (evil-mode (if evil? 0 t))
     (if evil?
         ;; switching from evil to non-evil
