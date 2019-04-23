@@ -18,4 +18,5 @@
                        helm-etags-plus
                        emmet-mode
                        markdown-mode
+                       evil
                        ))
