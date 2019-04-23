@@ -41,3 +41,19 @@
   "Open local.el file"
   (interactive)
   (find-file "~/.emacs.d/local.el"))
+
+(defun my/toggle-evil-mode ()
+  "Switch from evil mode to non evil mode"
+  (interactive)
+  (let ((evil? evil-mode))
+    (evil-mode (if evil? 0 t))
+    (if evil?
+        ;; switching from evil to non-evil
+        (progn
+          (linum-relative-mode 0)
+          (linum-mode)
+          (message "Evil mode off"))
+      ;; switching from non-evil to evil
+      (progn
+        (linum-relative-mode t)
+        (message "Evil mode on")))))

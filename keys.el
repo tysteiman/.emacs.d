@@ -7,7 +7,7 @@
                      ("C-j"       emmet-expand-line)
                      ("C-c h f"   browse-url-of-file)
                      ("C-c q r"   query-replace)
-                     ("C-c t e"   evil-mode)
+                     ("C-c t e"   my/toggle-evil-mode)
                      ;; helm bindings
                      ("C-x C-f"   helm-find-files)
                      ("C-x b"     helm-buffers-list)
