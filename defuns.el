@@ -57,3 +57,22 @@
       (progn
         (linum-relative-mode t)
         (message "Evil mode on")))))
+
+(defun my/source-header-toggle ()
+  "Switch from .c(pp) to its cooresponding .h file"
+  (interactive)
+  (let ((file buffer-file-name))
+    (when file
+      (let* ((split (split-string file "\\."))
+             (ext (car (last split)))
+             (target (if (string-match "^c$\\|^cpp$" ext) ".h" ".c"))
+             (joined-target (concat (car split) (if (string= target ".h")
+                                                    target
+                                                  (if (and
+                                                       (string= target ".c")
+                                                       (file-exists-p (concat (car split) ".c")))
+                                                      target
+                                                    ".cpp")))))
+        (if (file-exists-p joined-target)
+            (find-file joined-target)
+          (message (format "File not found: %s" joined-target)))))))

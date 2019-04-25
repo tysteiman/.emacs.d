@@ -23,3 +23,9 @@
                                                        ("C-c r r" (lambda ()
                                                                     (interactive)
                                                                     (compile (concat "rubocop " (buffer-file-name)))))))))
+
+;; bind c++-mode and c-mode hooks to switch header files easily with C-c h h
+(let ((hooks '(c++-mode-hook c-mode-hook)))
+  (dolist (hook hooks)
+    (add-hook hook (lambda ()
+                     (my/local-bind-keys-list '(("C-c h h" my/source-header-toggle)))))))
