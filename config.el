@@ -19,7 +19,6 @@
 (setq vc-follow-symlinks t)
 (setq tags-revert-without-query t)
 (setq dired-listing-switches "-lah")
-(setq linum-format " %d ")
 (setq-default truncate-lines t)
 (setq-default indent-tabs-mode nil)
 (setq-default c-basic-offset 4)

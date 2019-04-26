@@ -28,8 +28,6 @@
 (defun my/configure-code-buffer ()
   "Default configuration for code buffers"
   (interactive)
-  ;; show line numbers
-  (linum-mode)
   ;; show trailing whitespace
   (setq-local show-trailing-whitespace t)
   ;; use rainbow delimiters
@@ -41,22 +39,6 @@
   "Open local.el file"
   (interactive)
   (find-file "~/.emacs.d/local.el"))
-
-(defun my/toggle-evil-mode ()
-  "Switch from evil mode to non evil mode"
-  (interactive)
-  (let ((evil? (if (boundp 'evil-mode) evil-mode nil)))
-    (evil-mode (if evil? 0 t))
-    (if evil?
-        ;; switching from evil to non-evil
-        (progn
-          (linum-relative-mode 0)
-          (linum-mode)
-          (message "Evil mode off"))
-      ;; switching from non-evil to evil
-      (progn
-        (linum-relative-mode t)
-        (message "Evil mode on")))))
 
 (defun my/source-header-toggle ()
   "Switch from .c(pp) to its cooresponding .h file"
