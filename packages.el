@@ -19,5 +19,4 @@
                        emmet-mode
                        markdown-mode
                        evil
-                       linum-relative
                        ))
