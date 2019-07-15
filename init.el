@@ -2,7 +2,7 @@
 (setq custom-file "~/.emacs.d/custom.el")
 
 ;; load our required files
-(let ((files '(
+(let ((files `(
                custom
                defuns
                packages
@@ -10,6 +10,7 @@
                keys
                hooks
                local
+               ,(if (window-system) 'gui 'term)
                )))
   (dolist (file files)
     (let ((full (format "~/.emacs.d/%s.el" file)))

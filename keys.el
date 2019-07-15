@@ -7,7 +7,6 @@
                      ("C-j"       emmet-expand-line)
                      ("C-c h f"   browse-url-of-file)
                      ("C-c q r"   query-replace)
-                     ("C-c w c"   whitespace-cleanup)
                      ;; helm bindings
                      ("C-x C-f"   helm-find-files)
                      ("C-x b"     helm-buffers-list)
