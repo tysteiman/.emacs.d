@@ -11,3 +11,5 @@ local.el
 custom.el
 .ctags
 session.*
+
+projectile.cache
