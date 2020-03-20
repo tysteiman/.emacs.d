@@ -13,3 +13,5 @@ custom.el
 session.*
 
 projectile.cache
+
+server/
