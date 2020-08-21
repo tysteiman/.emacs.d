@@ -19,4 +19,5 @@
                        emmet-mode
                        markdown-mode
                        evil
+                       web-mode
                        ))
